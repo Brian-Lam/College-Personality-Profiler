@@ -1,0 +1,35 @@
+// Cover photo
+// graph.facebook.com/v2.1/search?q=Washington+University+in+St.+Louis&type=page&fields=cover
+// get data[0]->cover->source
+
+[Hi!|Hello!|What's up?|How's it going?]
+
+// Needs to handle lack of nickname
+I go to {school nickname|school name}.
+
+My friends are mostly {largest race},
+[but|and] I know [several|quite a few] {2nd largest race} people
+[and [a few|a handful of|some] {3rd largest race}].
+
+// TODO add class rank (I graduated in the X of my class)
+I got a {average ACT score} on my ACT and a {average SAT score} on my SAT.
+
+// Need to handle lack of CDS
+{We have to take a lot of core courses|
+ We have a couple core courses that everyone takes|
+ We don't really have to take any standard, "core" classes}
+ // Describe what courses
+ 
+A lot of my friends are majoring in {major}, {major}, and {major}.
+ 
+ {My freshman year was great, everyone I know kept going|
+ My freshman year was ok, but I know some people who ended up leaving|
+ A lot of people left my freshman year}
+ 
+{I cuss like a sailor}
+
+{I am generally happy}
+
+I might know {friends who went to this school}
+
+{Weather}
