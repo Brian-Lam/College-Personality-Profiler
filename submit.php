@@ -15,4 +15,6 @@
 		<p>Here's a photo of what's happening around campus: </p>
 		<p><img class="instagrampreview" src="<?php echo $personality->getInstagramUrl(); ?>"></p>
 	</div>
+
+	
 </body>
