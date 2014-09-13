@@ -1,0 +1,10 @@
+{
+	"temperatures":
+	{
+		"low": 0,
+		"avg": 0,
+		"high": 0,
+	},
+	"rainfall": 0,
+	"snowfall": 0
+}
