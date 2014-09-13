@@ -27,6 +27,7 @@ class JSONFetcher {
 
 		if($json == null)
 			throw new Exception("JSON error: " . json_last_error());
+		
 		return $json;
 	}
 }
