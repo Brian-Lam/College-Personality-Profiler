@@ -19,7 +19,7 @@ class PersonalityFactory {
 		$args['longitude'] = $map->getLongitude();
 		$args['latitude'] = $map->getLatitude();
 
-		$instagram = new Instagram($map->getLongitude(), $map->getLatitude());
+		$instagram = new Instagram($map->getLongitude(), $map->getLatitude(), $name);
 		$args['instagramUrl'] = $instagram->getUrl();
 
 		$personality = new Personality($args);
