@@ -11,6 +11,10 @@ class Fetcher {
 	protected $args;
 	protected $post;
 
+	// Create a new Fetcher!
+	// $url => the base url to search ("https://google.com/")
+	// $args => array of args (["name" => "Wash U", "other" => "Moo"])
+	// $post => boolean, whether to use post (or get, if false)
 	public function __construct($url, $args = array(), $post = false) {
 		$this->url = $url;
 

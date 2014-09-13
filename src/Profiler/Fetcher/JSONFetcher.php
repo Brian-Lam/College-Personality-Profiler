@@ -9,6 +9,10 @@ use Profiler\Fetcher\Fetcher;
 class JSONFetcher {
 	protected $fetcher;
 
+	// Create a new Fetcher!
+	// $url => the base url to search ("https://google.com/")
+	// $args => array of args (["name" => "Wash U", "other" => "Moo"])
+	// $post => boolean, whether to use post (or get, if false)
 	public function __construct($url, $args = array(), $post = false) {
 		$this->fetcher = new Fetcher($url, $args, $post);
 	}
