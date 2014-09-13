@@ -1,5 +1,5 @@
 <?php
-	use Profiler\PersonalityFactory;
+	use Profiler\Personality\PersonalityFactory;
 	
 	require_once("includes/header.php"); // TODO refactor
 ?>
@@ -11,9 +11,8 @@
 			<input type="submit" value="Search">
 		</form>
 	<?php
-		$xml = file_get_contents("https://graph.facebook.com/search?q=query&type=user");
-		//$xml = file_get_contents("http://google.com");
-		echo $xml;
+		$school = "Washington University in St. Louis";
+		$profile = PersonalityFactory::createProfileBySchoolName($school)
 	?>
 	</div>
 </body>
