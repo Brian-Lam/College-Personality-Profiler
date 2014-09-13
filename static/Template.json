@@ -1,0 +1,199 @@
+var colleges = [
+	{
+	"name": "Washington University in St. Louis",
+	"nicknames": [
+		"Bears",
+	],
+	"temperatures":
+	{
+		"low": 0,
+		"avg": 0,
+		"high": 0,
+	},
+	"population": 13558,
+	"ethnicities": {
+		"Caucasian": 54.2,
+		"African American": 6.8,
+		"Hispanic": 4.7,
+		"Asian": 23.5,
+		"Native Hawaiian/Pacific Islander": 0.1,
+		"Other": 10.7
+	},
+	},
+
+	{
+	"name": "University of Washington",
+	"nicknames": [
+		"Huskies",
+		"UDub",
+	],
+	"temperatures":
+	{
+		"low": 0,
+		"avg": 0,
+		"high": 0,
+	},
+	"population": 0,
+	"ethnicities": {
+		"Caucasian": 0,
+		"African American": 0,
+		"Hispanic": 0,
+		"Asian": 0,
+		"Middle Eastern": 0,
+		"Pacific Islander": 0,
+		"Native American/Alaskan": 0,
+		"Other": 0
+	},
+	"averageIncome": 0.0,
+	}, 
+
+	{
+	"name": "Emory University",
+	"nicknames": [
+		"Emory Eagles",
+	],
+	"temperatures":
+	{
+		"low": 0,
+		"avg": 0,
+		"high": 0,
+	},
+	"population": 0,
+	"ethnicities": {
+		"Caucasian": 0,
+		"African American": 0,
+		"Hispanic": 0,
+		"Asian": 0,
+		"Middle Eastern": 0,
+		"Pacific Islander": 0,
+		"Native American/Alaskan": 0,
+		"Other": 0
+	},
+	"averageIncome": 0.0,
+	},
+
+	{
+	"name": "Northwestern University",
+	"nicknames": [
+		"Wildcats"
+	],
+	"temperatures":
+	{
+		"low": 0,
+		"avg": 0,
+		"high": 0,
+	},
+	"population": 0,
+	"ethnicities": {
+		"Caucasian": 0,
+		"African American": 0,
+		"Hispanic": 0,
+		"Asian": 0,
+		"Middle Eastern": 0,
+		"Pacific Islander": 0,
+		"Native American/Alaskan": 0,
+		"Other": 0
+	},
+	"averageIncome": 0.0,
+	},
+
+	{
+	"name": "University of Chicago",
+	"nicknames": [
+		"Maroons",
+	],
+	"temperatures":
+	{
+		"low": 0,
+		"avg": 0,
+		"high": 0,
+	},
+	"population": 0,
+	"ethnicities": {
+		"Caucasian": 0,
+		"African American": 0,
+		"Hispanic": 0,
+		"Asian": 0,
+		"Middle Eastern": 0,
+		"Pacific Islander": 0,
+		"Native American/Alaskan": 0,
+		"Other": 0
+	},
+	"averageIncome": 0.0,
+	}, 
+
+	{
+	"name": "University of Georgia",
+	"nicknames": [
+		"Georgia Bulldogs",
+	],
+	"temperatures":
+	{
+		"low": 0,
+		"avg": 0,
+		"high": 0,
+	},
+	"population": 0,
+	"ethnicities": {
+		"Caucasian": 0,
+		"African American": 0,
+		"Hispanic": 0,
+		"Asian": 0,
+		"Middle Eastern": 0,
+		"Pacific Islander": 0,
+		"Native American/Alaskan": 0,
+		"Other": 0
+	},
+	"averageIncome": 0.0,
+	},
+
+	{
+	"name": "Massachusetts Institute of Technology",
+	"nicknames": [
+		"Engineers",
+	],
+	"temperatures":
+	{
+		"low": 0,
+		"avg": 0,
+		"high": 0,
+	},
+	"population": 0,
+	"ethnicities": {
+		"Caucasian": 0,
+		"African American": 0,
+		"Hispanic": 0,
+		"Asian": 0,
+		"Middle Eastern": 0,
+		"Pacific Islander": 0,
+		"Native American/Alaskan": 0,
+		"Other": 0
+	},
+	"averageIncome": 0.0,
+	}, 
+
+	{
+	"name": "Harvard University",
+	"nicknames": [
+		"Harvard Crimson",
+	],
+	"temperatures":
+	{
+		"low": 0,
+		"avg": 0,
+		"high": 0,
+	},
+	"population": 0,
+	"ethnicities": {
+		"Caucasian": 0,
+		"African American": 0,
+		"Hispanic": 0,
+		"Asian": 0,
+		"Middle Eastern": 0,
+		"Pacific Islander": 0,
+		"Native American/Alaskan": 0,
+		"Other": 0
+	},
+	"averageIncome": 0.0,
+	}
+]
