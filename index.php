@@ -18,11 +18,10 @@
 			<datalist id="schools">
 				<option value="Washington University in St. Louis" />
 				<option value="Harvard University" />
+				<option value="University of Illinois - Urbana Champagne" />
+				<option value="Yale University" />
 			</datalist>
 		</form>
 
-		<?php 
-			$profile = PersonalityFactory::createProfileBySchoolName($school);
-		?>
 	</div>
 </body>

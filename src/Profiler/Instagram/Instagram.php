@@ -7,7 +7,6 @@ class Instagram{
 	protected $image_url;
 
 	public function __construct($lng, $lat){
-		
 		$distance = "400";
 		$base_url = "https://api.instagram.com/v1/media/search?lat=";
 		$url = $base_url . $lat . "&lng=" .$lng . "&client_id=" . $client_id;
