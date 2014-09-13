@@ -1,5 +1,5 @@
 <?php
-    namespace Profiler\Analyzer\CussAnalyzer;
+    namespace Profiler\Analyzer;
     
     class CussAnalyzer {
 	protected $phrase;
@@ -28,7 +28,8 @@
                 "douche" =>1
             );
             $word = "";
-            $stringLength = strlen($phrase);
+            $swearScore = 0;
+            $stringLength = strlen($this->phrase);
             for ($i = 0; $i < $stringLength; $i++) {
                 $char = $str[$i];
                 if($char != "") {
@@ -36,11 +37,11 @@
                 } 
                 foreach($swearWords as &$swear) {
                     if($word == $swear) {
-                        return $swearWords[$swear];
+                        $swearScore += $swearWords[$swear];
                     }
                 }
             }
-            return 0;
+            return $swearScore;
         }
     }    
 ?>
