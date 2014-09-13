@@ -8,9 +8,9 @@
 			<input type="submit" value="Search">
 		</form>
 	<?php
-		//$xml = file_get_contents("http://graph.facebook.com");
-		$xml = file_get_contents("http://google.com");
-		//echo $xml;
+		$xml = file_get_contents("https://graph.facebook.com/search?q=query&type=user");
+		//$xml = file_get_contents("http://google.com");
+		echo $xml;
 	?>
 	</div>
 </body>
