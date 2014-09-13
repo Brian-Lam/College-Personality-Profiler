@@ -1,7 +1,7 @@
 <?php
 namespace Profiler\Twitter;
 
-class Twitter {}
+class Twitter {
 	public function __construct($lng, $lat) {
 		require_once($_SERVER['DOCUMENT_ROOT'] . "/twitteroauth-master/connect.php");
 		require_once($_SERVER['DOCUMENT_ROOT'] . "/twitteroauth-master/twitteroauth/twitteroauth.php");
