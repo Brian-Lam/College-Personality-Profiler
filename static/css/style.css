@@ -1,3 +1,20 @@
-body{
+body {
 	background-color: #EEE;
+}
+.container {
+	width:80%;
+	display: block;
+	margin: 0px auto;
+}
+.collegename {
+	font-size:20px;
+	height: 40px;
+	width: 80%;
+}
+.collegename-submit {
+	height: 40px;
+}
+#title {
+	font-size:2em;
+	text-align: center;
 }

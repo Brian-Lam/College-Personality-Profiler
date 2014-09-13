@@ -1,17 +1,18 @@
 <?php
 	use Profiler\Personality\PersonalityFactory;
-	
 	require_once("includes/header.php"); // TODO refactor
 ?>
 
 <body>
 	<div class="container">
+
 		<?php
 			$school = (@$_GET['school']) ? $_GET['school'] : "N/A";
 		?>
+
 		<form>
-			<input type="text" name="school" list="schools" value="<?php echo $school; ?>" />
-			<input type="submit" value="Search">
+			<input class="collegename" type="text" placeholder="What college should I generate a personality for?" name="school" list="schools" value="<?php echo $school; ?>" />
+			<input class="collegename-submit" type="submit" value="Search">
 
 			<datalist id="schools">
 				<option value="Washington University in St. Louis" />
