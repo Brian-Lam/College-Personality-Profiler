@@ -49,5 +49,23 @@
             "facebook",
             "sdk"
         ]
+    },
+    {
+        "name": "abraham/twitteroauth",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "git://github.com/abraham/twitteroauth.git",
+            "reference": "master"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/abraham/twitteroauth/zipball/master",
+            "reference": null,
+            "shasum": null
+        },
+        "type": "library",
+        "installation-source": "source"
     }
 ]

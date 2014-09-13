@@ -3,8 +3,25 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "9c173c9410c035b416a50cef7552710f",
+    "hash": "7e6fe74dce2e77caafde98783a05926d",
     "packages": [
+        {
+            "name": "abraham/twitteroauth",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/abraham/twitteroauth.git",
+                "reference": "master"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/abraham/twitteroauth/zipball/master",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "time": "2014-05-22 22:53:45"
+        },
         {
             "name": "facebook/php-sdk-v4",
             "version": "4.0.11",
@@ -58,7 +75,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "abraham/twitteroauth": 20
+    },
     "platform": [],
     "platform-dev": []
 }
