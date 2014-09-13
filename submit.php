@@ -1,6 +1,6 @@
 <?php
 	use Profiler\Personality\PersonalityFactory;
-	
+	require_once("includes/header.php");
 	require_once("includes/header.php"); // TODO refactor
 
 	$schoolname =  $_GET["school"];
