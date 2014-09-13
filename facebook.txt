@@ -1,0 +1,11 @@
+So you can get school FB IDs by searching on the Graph API.
+
+https://developers.facebook.com/tools/explorer/145634995501895/?method=GET&path=search%3Fq%3DWashington%2BUniversity%2Bin%2BSt.%2BLouis%26type%3Dpage&version=v2.1
+
+will search for Washington University in St. Louis. Just vary the q for each school
+
+Once you have an ID, you can get the cover photo:
+
+graph.facebook.com/v2.1/{id}?field=cover
+
+And that's all we need for now.
