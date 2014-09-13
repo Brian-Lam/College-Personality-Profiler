@@ -7,7 +7,7 @@
 	<div class="container">
 
 		<?php
-			$school = (@$_GET['school']) ? $_GET['school'] : "N/A";
+			$school = (@$_GET['school']) ? $_GET['school'] : "";
 		?>
 
 		<form>
