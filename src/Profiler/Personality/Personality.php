@@ -1,5 +1,6 @@
 <?php
 namespace Profiler\Personality;
+use Profiler\Instagram\Instagram;
 // The Personality class is never by itself instantiated, instead we
 // create it using a PersonalityFactory
 
@@ -7,13 +8,27 @@ namespace Profiler\Personality;
 
 class Personality{
 	protected $args;
+	protected $instagramUrl;
 
 	public function __construct($args) {
 		$this->args=$args;
-		$this->debug();
+		//$this->debug();
 	}
 
 	public function debug() {
-		echo($this->args);
+		print_r($this->args);
 	}
+
+	public function getLongitude(){
+		return $this->args["longitude"];
+	}
+
+	public function getLatitude(){
+		return $this->args["latitude"];
+	}
+
+	public function getInstagramUrl(){
+		return $this->args['instagramUrl'];
+	}
+
 }

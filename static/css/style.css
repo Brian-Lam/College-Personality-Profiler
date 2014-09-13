@@ -1,6 +1,10 @@
 body {
 	background-color: #EEE;
 }
+.text-intro{
+	font-size: 1.4em;
+	padding:20px;
+}
 .container {
 	width:80%;
 	display: block;
@@ -9,12 +13,21 @@ body {
 .collegename {
 	font-size:20px;
 	height: 40px;
-	width: 80%;
+	width: 75%;
+	text-align: center;
 }
 .collegename-submit {
 	height: 40px;
+	width:15%;
 }
 .title {
 	font-size:2em;
 	text-align: center;
+}
+.formwrap{
+	display: block;
+	margin:5px auto;
+}
+.instagrampreview{
+	height: 300px;
 }

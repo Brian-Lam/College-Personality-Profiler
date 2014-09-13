@@ -1,26 +1,6 @@
 {
-  "repositories": [
-  {
-    "type": "package",
-    "package": {
-      "name": "abraham/twitteroauth",
-      "version": "dev-master",
-      "dist": {
-        "url": "https://github.com/abraham/twitteroauth/zipball/master",
-        "type": "zip"
-        },
-        "source": {
-          "url": "git://github.com/abraham/twitteroauth.git",
-          "type": "git",
-          "reference": "master"
-        }
-      }
-    }
-    ],
-
   "require" : {
-    "facebook/php-sdk-v4" : "4.0.*",
-    "abraham/twitteroauth": "dev-master"
+    "facebook/php-sdk-v4" : "4.0.*"
   },
 
   "autoload": {
