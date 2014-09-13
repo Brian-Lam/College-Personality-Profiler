@@ -1,6 +1,7 @@
 <?php
 namespace Profiler\Personality;
 use Profiler\Instagram\Instagram;
+use Profiler\Twitter\Twitter;
 // The Personality class is never by itself instantiated, instead we
 // create it using a PersonalityFactory
 
@@ -16,6 +17,8 @@ class Personality{
 
 		$instagram = new Instagram($this->getLongitude(), $this->getLatitude());
 		$this->instagramUrl = $instagram->getUrl();
+
+		$twitter = new Twitter($this->getLongitude(), $this->getLatitude());
 	}
 
 	public function debug() {

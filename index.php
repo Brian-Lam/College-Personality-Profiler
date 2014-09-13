@@ -4,7 +4,7 @@
 	require_once("includes/header.php"); // TODO refactor
 ?>
 
-<body>
+<body>		
 	<div class="container">
 
 		<?php
@@ -38,8 +38,11 @@
 		 
 		$connection = getConnectionWithAccessToken("53207076-VqragtGcaPWoldCNrfbnwwWG4dUnP0BbeKcW4xt8m", "OdeBMzodirvxoDrgkKJxNvkEBeB87TUCkamvMpqyULsgq");
 		$content = $connection->get("https://api.twitter.com/1.1/geo/search.json?accuracy=3000&lat=38.6480&long=-90.3050");
+		$place_id = $content->result->places[0]->id;
+		
+		$base_url = "https://twitter.com/search?q=place%3A" . $place_id;
+		echo $base_url;
 
-		print_r($content);
 	?>
 	</div>
 </body>
