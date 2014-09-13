@@ -12,7 +12,7 @@
 		</form>
 	<?php
 		$school = "Washington University in St. Louis";
-		$profile = PersonalityFactory::createProfileBySchoolName($school)
+		$profile = PersonalityFactory::createProfileBySchoolName($school);
 	?>
 	</div>
 </body>

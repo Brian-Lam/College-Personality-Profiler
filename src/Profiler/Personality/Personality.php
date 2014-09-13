@@ -8,12 +8,12 @@ namespace Profiler\Personality;
 class Personality{
 	protected $args;
 
-	public function __construct($args){
+	public function __construct($args) {
 		$this->args=$args;
 		$this->debug();
 	}
 
-	public function debug(){
+	public function debug() {
 		echo($this->args);
 	}
 }
