@@ -14,6 +14,7 @@ class Personality{
 		$this->debug();
 
 		$instagram = new Instagram($this->getLongitude(), $this->getLatitude());
+		print_r($instagram->getUrl());
 	}
 
 	public function debug() {
