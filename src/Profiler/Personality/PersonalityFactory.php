@@ -7,8 +7,9 @@ use Profiler\Personality\Personality;
 
 
 // $person =  PersonalityFactory::personalityFromSchoolName("wash u");
-class PersonalityFactory{
-	public static function createProfileBySchoolName($name){
+class PersonalityFactory {
+	
+	public static function createProfileBySchoolName($name) {
 		$personality = new Personality($name);
 		echo("WORKING");
 	}
