@@ -11,7 +11,7 @@
 			$school = (@$_GET['school']) ? $_GET['school'] : "";
 		?>
 
-		<form>
+		<form action="submit.php">
 			<input class="collegename" type="text" placeholder="What college should I generate a personality for?" name="school" list="schools" value="<?php echo $school; ?>" />
 			<input class="collegename-submit" type="submit" value="Search">
 
