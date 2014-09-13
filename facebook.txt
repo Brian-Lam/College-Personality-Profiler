@@ -6,6 +6,12 @@ will search for Washington University in St. Louis. Just vary the q for each sch
 
 Once you have an ID, you can get the cover photo:
 
-graph.facebook.com/v2.1/{id}?field=cover
+	graph.facebook.com/v2.1/{id}?field=cover
 
 And that's all we need for now.
+
+Oh and 
+
+	graph.facebook.com/v2.1/me?fields=friends{education,name,picture}
+
+can get friends with their name and education and picture, which we can totes use to find your friends who go to a school.
