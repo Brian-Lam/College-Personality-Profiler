@@ -1,19 +1,12 @@
 <?php
-	use Profiler\PersonalityFactory;
-	
 	require_once("includes/header.php"); // TODO refactor
 ?>
 
 <body>
 	<div class="container">
-		<form>
-			<input type="text"></input>
-			<input type="submit" value="Search">
+		<form action="submit.php">
+			<input id="collegename" type="text" placeholder="What college should I generate a personality for?"></input>
+			<input id="collegename-submit" type="submit" value="Search">
 		</form>
-	<?php
-		$xml = file_get_contents("https://graph.facebook.com/search?q=query&type=user");
-		//$xml = file_get_contents("http://google.com");
-		echo $xml;
-	?>
 	</div>
 </body>
