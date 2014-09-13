@@ -58,16 +58,24 @@ class Fetcher {
 			curl_setopt($ch, CURLOPT_POSTFIELDS, $this->args);
 		}
 
+		// SSL
+		// TODO this is insecure— hacky
+		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+		// curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
+		// curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
+		// curl_setopt($ch, CURLOPT_CAINFO, getcwd() . "/static/cert/");
+
 		$page    = curl_exec($ch);
 		$info    = curl_getinfo($ch);
+		$error   = curl_errno($ch);
 		curl_close($ch);
 
 		if($info['http_code'] != '200') {
-		 	if ($info['http_code'] == '0') {
+		 	if (!$error) {
 		 		throw new Exception("Could not access '$this->url'.");
 		 	}
 
-	 		throw new Exception("fetch() failed; error code: " . $info['http_code']);
+	 		throw new Exception("fetch() failed; error code: " . $error);
 		 }
 
 		return $page;
