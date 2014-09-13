@@ -1,5 +1,7 @@
 <?php
 	use Profiler\Personality\PersonalityFactory;
+	use Profiler\Fetcher\JSONFetcher;
+
 	require_once("includes/header.php"); // TODO refactor
 ?>
 
