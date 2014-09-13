@@ -1,3 +1,6 @@
 {
-	"population": 14513
+	"population": {
+		"total enrollment": 14513,
+		"undergraduate enrollment": 7836
+	}
 }

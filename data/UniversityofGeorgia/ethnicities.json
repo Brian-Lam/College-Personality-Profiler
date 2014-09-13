@@ -1,1 +1,10 @@
-ethnicities.json
+{
+	"ethnicities": {
+		"Caucasian": 73,
+		"African American": 7,
+		"Hispanic": 5,
+		"Asian": 9,
+		"Native American/Pacific Islander": 0,
+		"Other": 6
+	}
+}

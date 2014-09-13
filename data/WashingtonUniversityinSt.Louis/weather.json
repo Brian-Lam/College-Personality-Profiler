@@ -1,4 +1,6 @@
 {
-	"snowfall": true,
-	"avgRainfall": 3.23
+	"weather": {
+		"snowfall": true,
+		"avgRainfall": 3.23
+	}
 }
