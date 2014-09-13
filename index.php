@@ -10,7 +10,7 @@
 			$school = (@$_GET['school']) ? $_GET['school'] : "N/A";
 		?>
 		<form>
-			<input type="text" name="school" list="schools" value="<?php echo $school; ?>"/>
+			<input type="text" name="school" list="schools" value="<?php echo $school; ?>" />
 			<input type="submit" value="Search">
 
 			<datalist id="schools">
