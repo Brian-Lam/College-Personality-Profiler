@@ -8,13 +8,14 @@ use Profiler\Instagram\Instagram;
 
 class Personality{
 	protected $args;
+	protected $instagramUrl;
 
 	public function __construct($args) {
 		$this->args=$args;
-		$this->debug();
+		//$this->debug();
 
 		$instagram = new Instagram($this->getLongitude(), $this->getLatitude());
-		print_r($instagram->getUrl());
+		$this->instagramUrl = $instagram->getUrl();
 	}
 
 	public function debug() {
@@ -27,6 +28,10 @@ class Personality{
 
 	public function getLatitude(){
 		return $this->args["latitude"];
+	}
+
+	public function getInstagramUrl(){
+		return $this->instagramUrl;
 	}
 
 }

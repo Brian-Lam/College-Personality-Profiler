@@ -17,6 +17,7 @@ class PersonalityFactory {
 		$args['longitude'] = $map->getLongitude();
 		$args['latitude'] = $map->getLatitude();
 		$personality = new Personality($args);
+		return $personality;
 	}
 }
 ?>
