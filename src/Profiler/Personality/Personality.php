@@ -16,4 +16,9 @@ class Personality{
 	public function debug() {
 		echo($this->args);
 	}
+
+	public function getLongitude(){
+		return $this->args["longitude"];
+	}
+
 }

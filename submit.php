@@ -1,7 +1,8 @@
 <?php
-	use Profiler\PersonalityFactory;
+	use Profiler\Personality\PersonalityFactory;
+	
 	require_once("includes/header.php"); // TODO refactor
 
 	$schoolname =  $_GET["school"];
-	echo $schoolname;
+	$personality = PersonalityFactory::createProfileBySchoolName($schoolname);
 ?>
