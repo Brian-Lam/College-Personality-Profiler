@@ -1,4 +1,5 @@
-<?php require_once("header.php")
+<?php 
+	require_once("includes/header.php"); // TODO refactor
 ?>
 
 <body>
