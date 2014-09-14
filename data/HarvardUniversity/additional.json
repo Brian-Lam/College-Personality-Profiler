@@ -1,26 +1,26 @@
-[
+{
   {
-    "retention_rate":0.943,
-    "requires_arts":"TRUE",
+    "retention_rate":0.97,
+    "requires_arts":"FALSE",
     "requires_humanites":"TRUE",
-    "requires_computerliteracy":"TRUE",
+    "requires_computerliteracy":"FALSE",
     "requires_math":"TRUE",
     "requires_english":"TRUE",
     "requires_philosophy":"FALSE",
-    "requires_foreignlanguages":"FALSE",
+    "requires_foreignlanguages":"TRUE",
     "requires_science":"TRUE",
-    "requires_history":"TRUE",
+    "requires_history":"FALSE",
     "requires_socialscience":"TRUE",
-    "top_degree1":"Business/Marketing",
-    "top_degree2":"Social Science",
-    "top_degree3":"Communication/Journalism",
-    "need_met_percent":0.671,
-    "number_receiving_aid":9793,
-    "top_tenth_rank":0.47,
-    "top_quarter_rank":0.89,
-    "top_half_rank":0.98,
+    "top_degree1":"Social Science",
+    "top_degree2":"Biological/Life Science",
+    "top_degree3":"History",
+    "need_met_percent":"1",
+    "number_receiving_aid":4148,
+    "top_tenth_rank":0.954,
+    "top_quarter_rank":0.997,
+    "top_half_rank":0.999,
     "bottom_quarter_rank":"0",
-    "pride_index":3.5,
+    "pride_index":5,
     "has_campus_ministries":"TRUE",
     "has_choral_groups":"TRUE",
     "has_concert_band":"TRUE",
@@ -42,7 +42,7 @@
     "has_symphony_orchestra":"TRUE",
     "has_television_station":"TRUE",
     "has_yearbook":"TRUE",
-    "percent_fraternity":0.21,
-    "percent_sorority":0.26
+    "percent_fraternity":-1,
+    "percent_sorority":-1
   }
-]
+}

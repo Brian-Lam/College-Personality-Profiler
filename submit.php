@@ -111,7 +111,7 @@
 		<div class="container">
 			<h2 id="extracurriculars">Extracurriculars</h2>
 
-			<p>Greek life&#8217;s not that big here. About <strong>1 in 4 of my male friends joined fraternities</strong>, and <strong>1 in 4 of my female friends joined sororities</strong>.</p>
+			<p>Greek life&#8217;s not that big here. About <strong>1 in <?php echo intval(1 / $personality->getFrat()); ?> of my male friends joined fraternities</strong>, and <strong>1 in <?php echo intval(1 / $personality->getSoro()); ?> of my female friends joined sororities</strong>.</p>
 
 			<p>Very few people care about sports, even though our women&#8217;s soccer team, men&#8217;s basketball team, and women&#8217;s basketball team are the best D3 teams in the Midwest.</p>
 

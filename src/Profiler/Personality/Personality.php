@@ -78,4 +78,12 @@ class Personality{
 		return $this->args['nickname'][1];
 	}
 
+	public function getFrat(){
+		return $this->args['frat'];
+	}
+
+	public function getSoro(){
+		return $this->args['soro'];
+	}
+
 }

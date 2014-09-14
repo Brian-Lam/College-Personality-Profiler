@@ -1,4 +1,4 @@
-[
+{
   {
     "retention_rate":0.93,
     "requires_arts":"TRUE",
@@ -45,4 +45,4 @@
     "percent_fraternity":"NULL",
     "percent_sorority":"NULL"
   }
-]
+}

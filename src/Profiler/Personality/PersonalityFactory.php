@@ -90,12 +90,28 @@ class PersonalityFactory {
 		$args['SATMath'] = intval(($t[4] + $t[5]) / 2);
 		$args['SATWriting'] = intval(($t[6] + $t[7]) / 2);
 
-		//get Facebook ID
+		//get Facebook ID and nickname
 		$fileName = getcwd() . "/data/" . $parsedName . "/name.json";
 		$namefile = file_get_contents($fileName);
 		$fbfile = json_decode($namefile);
 		$args['fbid'] = $fbfile->fbid;
 		$args['nickname'] = $fbfile->name;
+
+		//get weather
+		$fileName = getcwd() . "/data/" . $parsedName . "/weather.json";
+		$weatherfile = file_get_contents($fileName);
+		$weather = json_decode($weatherfile);
+		$args['snowfall'] = $weather->weather->snowfall;
+		$args['rainfall'] = $weather->weather->rainfall;
+		$args['avgtemp'] = $weather->weather->avgtemperature;
+
+		//get additional info
+		$fileName = getcwd() . "/data/" . $parsedName . "/additional.json";
+		$additionalfile = file_get_contents($fileName);
+		$addfile = json_decode($additionalfile);
+		$args['frat'] = $addfile->percent_fraternity;
+		$args['soro'] = $addfile->percent_sorority;
+
 
 		$instagram = new Instagram($map->getLongitude(), $map->getLatitude(), $name);
 		$args['instagramUrl'] = $instagram->getUrl();
