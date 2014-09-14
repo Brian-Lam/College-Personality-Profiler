@@ -8,8 +8,50 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<script>
 
+	var schoolInfo = new Array();
+	schoolInfo["longitude"] = <?php echo $personality->getLongitude() ?>;
+	schoolInfo["latitude"] = <?php echo $personality->getLatitude() ?>;
 
+	schoolInfo["percentMale"] = <?php echo $personality->getPercentMale() ?>;
+
+	schoolInfo["ethnicities"] = <?php
+		echo "new Array();\n";
+		$ethnicities = $personality->getEthnicities();
+		echo "\tschoolInfo[\"sat\"][\"white\"] = ".$ethnicities[0].";\n";
+		echo "\tschoolInfo[\"sat\"][\"black\"] = ".$ethnicities[1].";\n";
+		echo "\tschoolInfo[\"sat\"][\"hispanic\"] = ".$ethnicities[2].";\n";
+		echo "\tschoolInfo[\"sat\"][\"asian\"] = ".$ethnicities[3].";\n";
+		echo "\tschoolInfo[\"sat\"][\"pacific islander\"] = ".$ethnicities[4].";\n";
+		echo "\tschoolInfo[\"sat\"][\"other\"] = ".$ethnicities[5].";\n";
+	?>
+
+	schoolInfo["residency"] = <?php
+		echo "new Array();\n";
+		$res = $personality->getResidency();
+		echo "\tschoolInfo[\"sat\"][\"inState\"] = ".$res[0].";\n";
+		echo "\tschoolInfo[\"sat\"][\"outState\"] = ".$res[1].";\n";
+		echo "\tschoolInfo[\"sat\"][\"foreign\"] = ".$res[2].";\n";
+	?>
+
+	schoolInfo["diversity"] = <?php echo $personality->getDiversity() ?>;
+
+	schoolInfo["undergrads"] = <?php echo $personality->getUndergrads() ?>;
+
+	schoolInfo["act"] = <?php echo $personality->getACT() ?>;
+
+	schoolInfo["sat"] = <?php
+		echo "new Array();\n";
+		$sat = $personality->getSAT();
+		echo "\tschoolInfo[\"sat\"][\"reading\"] = ".$sat[0].";\n";
+		echo "\tschoolInfo[\"sat\"][\"math\"] = ".$sat[1].";\n";
+		echo "\tschoolInfo[\"sat\"][\"writing\"] = ".$sat[2].";\n";
+	?>
+
+	
+	
+	</script>
 </head>
 <body class="submit">
 	<div class="container">
