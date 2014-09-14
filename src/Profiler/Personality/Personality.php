@@ -86,4 +86,47 @@ class Personality{
 		return $this->args['soro'];
 	}
 
+	public function getTempFluctuation(){
+		return max($this->args['avgtemp'])-min($this->args['avgtemp']);
+	}
+
+	public function rainQuantifier(){
+		$rain = array_sum($this->args['rainfall']);
+		$ton = 35;
+		$occasionally = 20;
+		$bit = 10;
+
+		if($rain>$ton){
+			return "a ton";
+		}
+		elseif($rain>$occasionally){
+			return "occasionally";
+		}
+		elseif($rain>$bit){
+			return "a bit";
+		}
+		else{
+			return "almost never";
+		}
+	}
+
+	public function snowQuantifier(){
+		$snow = array_sum($this->args['snowfall']);
+		$ton = 30;
+		$occasionally = 20;
+		$bit = 10;
+
+		if($snow>$ton){
+			return "a ton";
+		}
+		elseif($snow>$occasionally){
+			return "occasionally";
+		}
+		elseif($snow>$bit){
+			return "a bit";
+		}
+		else{
+			return "almost never";
+		}
+	}
 }

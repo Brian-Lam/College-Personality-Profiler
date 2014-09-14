@@ -60,7 +60,7 @@
 
 			<p><!-- TODO autoget location --><!-- TODO generate weather copy -->
 				It's in the midwest - in <strong>St. Louis, Missouri</strong>, to be precise - so (of course) the weather is absolutely terrible. 
-				It rains a ton. It snows a ton. And it gets really hot in the summer. We have a 51 degree fluctuation in the average temperature between summer and winter!
+				It rains <?php echo $personality->rainQuantifier(); ?>. It snows <?php echo $personality->rainQuantifier(); ?>. And it gets really hot in the summer. We have a <?php echo $personality->getTempFluctuation(); ?> degree fluctuation in the average temperature between summer and winter!
 			</p>
 
 			<blockquote>

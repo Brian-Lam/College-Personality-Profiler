@@ -1,5 +1,4 @@
 {
-  {
     "retention_rate":0.97,
     "requires_arts":"FALSE",
     "requires_humanites":"FALSE",
@@ -45,4 +44,3 @@
     "percent_fraternity":0.25,
     "percent_sorority":0.25
   }
-}
