@@ -14,7 +14,7 @@
 	<div class="container">
 		<header>
 			<h1>College Personality Profiler</h1>
-			<h2>We figure out what it's like to go to college so you don't have to. Yet.</h2>
+			<h2>Because you don't go to college. Yet.</h2>
 
 			<form class="search" action="submit.php">
 				<input class="collegename" 

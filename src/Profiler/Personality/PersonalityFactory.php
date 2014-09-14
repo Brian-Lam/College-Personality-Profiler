@@ -21,12 +21,12 @@ class PersonalityFactory {
 		$args['longitude'] = $map->getLongitude();
 		$args['latitude'] = $map->getLatitude();
 
-		$name = preg_replace("/ /", "", $name);
-		$name = preg_replace("/\./", "", $name);
-		$name = strtolower($name);
+		$parsedName = preg_replace("/ /", "", $name);
+		$parsedName = preg_replace("/\./", "", $parsedName);
+		$parsedName = strtolower($parsedName);
 
 		// get percentage male
-		$fileName = "/Users/morganredding/Desktop/Hackathon/College-Personality-Profiler/data/".$name."/gender.json";
+		$fileName = getcwd() . "/data/".$parsedName."/gender.json";
 		$doc = fopen($fileName,"r");
 		$t = fread($doc, filesize($fileName));
 		fclose($doc);
@@ -35,7 +35,7 @@ class PersonalityFactory {
 		$args['percentMale'] = $t[0];
 
 		// get ethnicities
-		$fileName = "/Users/morganredding/Desktop/Hackathon/College-Personality-Profiler/data/".$name."/ethnicities.json";
+		$fileName = getcwd() . "/data/".$parsedName."/ethnicities.json";
 		$doc = fopen($fileName,"r");
 		$t = fread($doc, filesize($fileName));
 		fclose($doc);
@@ -54,7 +54,7 @@ class PersonalityFactory {
 		$args["Diversity"] = ($args["Diversity"] - 3 / 7) * (21 / 40);
 
 		// get population
-		$fileName = "/Users/morganredding/Desktop/Hackathon/College-Personality-Profiler/data/".$name."/population.json";
+		$fileName = getcwd() . "/data/".$parsedName."/population.json";
 		$doc = fopen($fileName,"r");
 		$t = fread($doc, filesize($fileName));
 		fclose($doc);
@@ -64,7 +64,7 @@ class PersonalityFactory {
 		$args['Undergraduate'] = $t[1];
 
 		// get residency
-		$fileName = "/Users/morganredding/Desktop/Hackathon/College-Personality-Profiler/data/".$name."/residency.json";
+		$fileName = getcwd() . "/data/".$parsedName."/residency.json";
 		$doc = fopen($fileName,"r");
 		$t = fread($doc, filesize($fileName));
 		fclose($doc);
@@ -75,7 +75,7 @@ class PersonalityFactory {
 		$args['Foreign'] = $t[2];
 
 		// get testScores
-		$fileName = "/Users/morganredding/Desktop/Hackathon/College-Personality-Profiler/data/".$name."/academics/testScores.json";
+		$fileName = getcwd() . "/data/".$parsedName."/academics/testScores.json";
 		$doc = fopen($fileName,"r");
 		$t = fread($doc, filesize($fileName));
 		fclose($doc);
@@ -87,7 +87,7 @@ class PersonalityFactory {
 		$args['SATWriting'] = ($t[6] + $t[7]) / 2;
 
 
-		$instagram = new Instagram($map->getLongitude(), $map->getLatitude());
+		$instagram = new Instagram($map->getLongitude(), $map->getLatitude(), $name);
 		$args['instagramUrl'] = $instagram->getUrl();
 
 		$personality = new Personality($args);

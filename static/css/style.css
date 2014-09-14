@@ -1,15 +1,14 @@
 body {
   background-color: #A52A2A;
 
-  font: 20px Verdana;
+  font: 1.5em Verdana;
+  line-height: 1.5;
   color: #fff;
+
+  margin: 0;
+  padding: 0;
 }
-.banner {
-  height:28%;
-  background-image: url("http://law.wustl.edu/organizations/iplaw/images/washu1.jpg");
-  background-size: 100%;
-  margin: 0 auto;
-}
+
 .container {
   width: 70%;
   display: block;
@@ -19,33 +18,40 @@ body {
 /* Header */
 header {
   margin: 0 auto;
-  font-size: 20px;
+  padding: 1em 0;
+
   text-align: center;
   text-shadow: 2px 2px 4px #000000;
 }
 
 body.submit header {
-  text-align: center;
+  text-align: left;
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+header h1 {
+  font-size: 4rem;
 }
 
 body.submit header h1 {
-  font-size: 25px;
+  font-size: 2rem;
+}
+
+body.submit .college {
+  padding-top: 10rem;
+  font-size: 3rem;
 }
 
 header h2 {
+  font-size: 3rem;
   font-weight: normal;
 }
 
 body.submit header h2 {
-  font-size: 15px;
-  text-shadow: 2px 2px 4px #000000;
-}
-
-.map {
-  text-align: center;
-}
-.picture {
-  text-align: center;
+  font-size: 1rem;
 }
 
 /* Form */
@@ -55,8 +61,8 @@ form {
 
 .collegename,
 .collegename-submit {
-  font-size: 20px;
-  height: 40px;
+  font-size: 1rem;
+  height: 2.5rem;
 }
 
 .collegename {
