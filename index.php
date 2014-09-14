@@ -31,7 +31,6 @@
 					<option value="Emory University"/>
 					<option value="Massachusetts Institute of Technology"/>
 					<option value="Northwestern University"/>
-					<option value="University of Chicago"/>
 					<option value="University of Georgia"/>
 					<option value="University of Washington"/>
 				</datalist>

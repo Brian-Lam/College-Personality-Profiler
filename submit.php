@@ -33,7 +33,7 @@
 					<option value="Emory University"/>
 					<option value="Massachusettes Institute of Technology"/>
 					<option value="Northwestern University"/>
-					<option value="University of Chicago"/>
+					<!-- <option value="University of Chicago"/> -->
 					<option value="University of Georgia"/>
 					<option value="University of Washington"/>
 				</datalist>
@@ -46,7 +46,8 @@
 	<section>
 		<div class="container">
 			<blockquote>
-			<!-- TODO autoget school nickname -->
+			<!-- TODO aut'et school nickname -->
+				<img src='person.png' class="personImage">
 				<strong>Hi!</strong> I go to <strong><?php echo $school ?></strong>, but you might know it is as <strong><?php echo $personality->getNickname(); ?></strong>.
 			</blockquote>
 
@@ -64,6 +65,7 @@
 			</p>
 
 			<blockquote>
+				<img src='person.png' class="personImage">
 				<?php echo $personality->snowPhrase(); ?>
 			</blockquote>
 		</div>
@@ -74,6 +76,7 @@
 			<h2 id="sizeanddiversity">Size and Diversity</h2>
 
 			<blockquote>
+			<img src='person.png' class="personImage">
 			<p><?php echo $personality->diversityPhrase(); ?></p>
 			</blockquote>
 
@@ -96,10 +99,10 @@
 
 			<!-- <p>I might have seen {your FB friends who attend this school} around campus.</p> -->
 
-			<p>About a third of my friends get scholarship money, which is helpful because it costs about <strong>$40,000 a year</strong> to go here otherwise. Everyone who needed financial aid got it, though.</p>
+			<p>About 1 in 3 of my friends get scholarship money, which is helpful because it costs about <strong>$40,000 a year</strong> to go here otherwise. Everyone who needed financial aid got it, though.</p>
 		</div>
 	</section>
-
+<!-- 
 	<section>
 		<div class="container">
 			<h2 id="academics">Academics</h2>
@@ -145,7 +148,7 @@
 			<p>The student health center here provides free condoms and pregnancy testing, as well as free STI screening.</p>
 		</div>
 	</section>
-
+ -->
 	<script>
 
 	var schoolInfo = new Array();
