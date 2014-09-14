@@ -14,7 +14,7 @@
 	<header style="background-image: url(https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpa1/t31.0-8/10506673_10152638203716178_8711067838228894072_o.jpg);">
 		<div class="container">
 			<h1>College Personality Profiler</h1>
-			<h2>We figure out what it's like to go to college so you don't have to. Yet.</h2>
+			<h2>Because you don't go to college. Yet.</h2>
 
 			<form class="search" action="submit.php">
 				<span>
