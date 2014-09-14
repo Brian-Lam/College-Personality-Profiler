@@ -44,6 +44,8 @@ body.submit header {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
+
+  border-bottom: 1.5rem solid #580E0E;
 }
 
 header h1 {
@@ -109,10 +111,9 @@ form {
     height: 3rem;
   }
 
-/* THE SPEECH BUBBLE
-------------------------------------------------------------------------------------------------------------------------------- */
-
-.triangle-border {
+/*Thanks to Nicholas Gallagher for his speech bubbles! http://nicolasgallagher.com/pure-css-speech-bubbles/demo/*/
+/*Thanks to http://www.clker.com/clipart-24011.html for the silhouette image*/
+blockquote {
   position:relative;
   padding:15px;
   margin:1em 0 3em;
@@ -124,19 +125,12 @@ form {
   -moz-border-radius:10px;
   border-radius:10px;
 }
-.person-picture{
-  height: 150px;
-  width: 150px;
-  position: absolute;
-  left: -220px;
-  top: -33px;
-}
 
 
 /* Variant : for left/right positioned triangle
 ------------------------------------------ */
 
-.triangle-border.left {
+blockquote {
   margin-left:30px;
   width: 70%;
   left: 20%;
@@ -146,7 +140,7 @@ form {
 ------------------------------------------------------------------------------------------------------------------------------- */
 
 /* creates triangle */
-.triangle-border:before {
+blockquote:before {
   content:"";
   position:absolute;
   bottom:-20px; /* value = - border-top-width - border-bottom-width */
@@ -160,7 +154,7 @@ form {
 }
 
 /* creates the smaller  triangle */
-.triangle-border:after {
+blockquote:after {
   content:"";
   position:absolute;
   bottom:-13px; /* value = - border-top-width - border-bottom-width */
@@ -176,7 +170,7 @@ form {
 /* Variant : left
 ------------------------------------------ */
 /* creates the larger triangle */
-.triangle-border.left:before {
+blockquote:before {
   top:10px; /* controls vertical position */
   bottom:auto;
   left:-30px; /* value = - border-left-width - border-right-width */
@@ -185,13 +179,10 @@ form {
 }
 
 /* creates the smaller  triangle */
-.triangle-border.left:after {
+blockquote:after {
   top:16px; /* value = (:before top) + (:before border-top) - (:after border-top) */
   bottom:auto;
   left:-21px; /* value = - border-left-width - border-right-width */
   border-width:9px 21px 9px 0;
   border-color:transparent #E0E4CC;
 }
-
-/*Thanks to Nicholas Gallagher for his speech bubbles! http://nicolasgallagher.com/pure-css-speech-bubbles/demo/*/
-/*Thanks to http://www.clker.com/clipart-24011.html for the silhouette image*/

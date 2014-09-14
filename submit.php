@@ -46,10 +46,7 @@
 	<section>
 		<div class="container">
 			<blockquote>
-				<p id="introQuote" class="triangle-border left"> 
-					<img src="person.png" class="person-picture">
-					<strong>Hi!</strong> I go to <strong>WashU</strong>, but you might know it is as <strong>Washington University in St. Louis</strong>.
-				</p>
+				<strong>Hi!</strong> I go to <strong>WashU</strong>, but you might know it is as <strong>Washington University in St. Louis</strong>.
 			</blockquote>
 
 			<img width="250" height="250" class="instagrampreview" src="<?php echo $personality->getInstagramUrl(); ?>">
@@ -66,11 +63,7 @@
 			</p>
 
 			<blockquote>
-				<p  id="weatherQuote" class="triangle-border left"> 
-					<img src="person.png" class="person-picture">
-					Wear snow boots!
-				</p>
-				<br>
+				Wear snow boots!
 			</blockquote>
 		</div>
 	</section>
