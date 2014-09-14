@@ -5,6 +5,7 @@ use Profiler\Personality\Personality;
 
 use Profiler\Map\Map;
 use Profiler\Instagram\Instagram;
+use Profiler\YikYak\YikYakGrabber;
 // The Profiler takes a school name and creates a Profile object
 // It grabs all the data required and builds a very nice and pretty object for the front-end.
 
@@ -21,6 +22,9 @@ class PersonalityFactory {
 
 		$instagram = new Instagram($map->getLongitude(), $map->getLatitude(), $name);
 		$args['instagramUrl'] = $instagram->getUrl();
+
+		$yaks = new YikYakGrabber(1,1);
+		echo $yaks->run();
 
 		$personality = new Personality($args);
 		return $personality;

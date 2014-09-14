@@ -1,5 +1,5 @@
 <?php
-namespace Profiler\YikYak
+namespace Profiler\YikYak;
 class YikYakGrabber {
 	protected $lat;
 	protected $lng;
@@ -10,10 +10,9 @@ class YikYakGrabber {
 	}
 
 	public function run() {
-		
+		$command = escapeshellcmd('python src/Profiler/YikYak/example.py');
+		$output = shell_exec($command);
+		echo $output;
 	}
 }
-	$command = escapeshellcmd('python example.py');
-	$output = shell_exec($command);
-	echo $output;
 ?>
