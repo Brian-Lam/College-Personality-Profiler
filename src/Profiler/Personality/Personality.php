@@ -27,8 +27,8 @@ class Personality{
 		return $this->args["latitude"];
 	}
 
-	public function getInstagramUrl(){
-		return $this->args['instagramUrl'];
+	public function getInstagramUrls(){
+		return $this->args['instagramUrls'];
 	}
 
 }

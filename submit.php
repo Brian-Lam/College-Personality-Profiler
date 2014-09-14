@@ -13,7 +13,9 @@
 		Latitude: <?php echo $personality->getLatitude(); ?> <br>
 		Longitude <?php echo $personality->getLongitude(); ?> <br>
 		<p>Here's a photo of what's happening around campus: </p>
-		<p><img class="instagrampreview" src="<?php echo $personality->getInstagramUrl(); ?>"></p>
+		<p><img class="instagrampreview" src="<?php echo $personality->getInstagramUrls()[0]; ?>"></p>
+		<p><img class="instagrampreview" src="<?php echo $personality->getInstagramUrls()[1]; ?>"></p>
+		<p><img class="instagrampreview" src="<?php echo $personality->getInstagramUrls()[2]; ?>"></p>
 	</div>
 
 	

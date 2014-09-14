@@ -20,8 +20,8 @@ class PersonalityFactory {
 		$args['longitude'] = $map->getLongitude();
 		$args['latitude'] = $map->getLatitude();
 
-		$instagram = new Instagram($map->getLongitude(), $map->getLatitude(), $name);
-		$args['instagramUrl'] = $instagram->getUrl();
+		$instagram = new Instagram($map->getLongitude(), $map->getLatitude(), $name, 3);
+		$args['instagramUrls'] = $instagram->getUrl();
 
 		$yaks = new YikYakGrabber($map->getLatitude(),$map->getLongitude(),10);
 		echo $yaks->run();
