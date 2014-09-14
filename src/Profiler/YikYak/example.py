@@ -10,7 +10,10 @@ ut = pyak.Location("35.943356", "-83.938699")
 yakker.update_location(ut)
 
 yaks = yakker.get_yaks()
-print("hi")
+counter = 0
 for yak in yaks:
+	counter = counter + 1
 	yak.print_yak()
 	print "<br>"
+	if (counter > 15):
+		break;
