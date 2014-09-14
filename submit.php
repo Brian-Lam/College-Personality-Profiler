@@ -45,9 +45,9 @@
 
 			[Map Embed]
 
-			<img class="instagrampreview" src="<?php echo $personality->getInstagramUrl(); ?>">
-			<img class="instagrampreview" src="<?php echo $personality->getInstagramUrl(); ?>">
-			<img class="instagrampreview" src="<?php echo $personality->getInstagramUrl(); ?>">
+			<img width="250" height="250" class="instagrampreview" src="<?php echo $personality->getInstagramUrl(); ?>">
+			<img width="250" height="250" class="instagrampreview" src="<?php echo $personality->getInstagramUrl(); ?>">
+			<img width="250" height="250" class="instagrampreview" src="<?php echo $personality->getInstagramUrl(); ?>">
 		</section>
 
 		<section>
