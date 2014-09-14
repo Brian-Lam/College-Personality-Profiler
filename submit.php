@@ -59,7 +59,7 @@
 
 			<p>
 				It's in the midwest - in <strong>St. Louis, Missouri</strong>, to be precise - so (of course) the weather is absolutely terrible. 
-				It rains a ton. It snows a ton. And it gets really hot in the summer.
+				It rains a ton. It snows a ton. And it gets really hot in the summer. We have a 51 degree fluctuation in the average temperature between summer and winter!
 			</p>
 
 			<blockquote>
