@@ -1,23 +1,10 @@
-//sentiment analyzis from Alex Davies: http://alexdavies.net/twitter-sentiment-analysis/
-
 <?php
+// sentiment analyzis from Alex Davies: http://alexdavies.net/twitter-sentiment-analysis/
 namespace Profiler\Analyzer;
+require "Word.php";
+// use Profiler\Analyzer\Word;
 class HappinessAnalyzer{
 	protected $phrase;
-
-	class Word {
-		public $text = "";
-		public $happy = 0;
-		public $sad = 0;
-		function __construct($txt, $happy, $sad) {
-       		$this->text = $txt;
-       		$this->happy = $happy;
-       		$this->sad = $sad;
-   		}
-   		function getText() {
-   			return $this->text;
-   		}
-	}
 
 	public function __construct($phrase) {
 		$this->phrase = str_replace("\n"," ",$phrase);
@@ -41,7 +28,7 @@ class HappinessAnalyzer{
 
 	function getWordList(){
 		$words = array();
-		$doc = explode("\n",file_get_contents("sentiment_list.csv"));
+		$doc = explode("\n",file_get_contents("src/Profiler/Analyzer/sentiment_list.csv"));
 		foreach ($doc as $line) {
 			$elements = explode(",", $line);
 			array_push($words, new Word($elements[0], $elements[1], $elements[2]));
@@ -49,8 +36,8 @@ class HappinessAnalyzer{
 	}
 
 	function run(){
-		$worldList = getWordList();
-		return getHappiness($wordList,$phrase);
+		$worldList = $this->getWordList();
+		return $this->getHappiness($wordList,$phrase);
 	}
 }
 ?>

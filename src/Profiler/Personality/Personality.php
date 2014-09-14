@@ -70,4 +70,8 @@ class Personality{
 		return $this->args['coverPhoto'];
 	}
 
+	public function getYaks(){
+		return $this->args['yaks'];
+	}
+
 }

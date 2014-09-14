@@ -9,6 +9,7 @@ use Profiler\Map\Map;
 use Profiler\Instagram\Instagram;
 use Profiler\Facebook\FacebookCoverPhotoGrabber;
 use Profiler\YikYak\YikYakGrabber;
+use Profiler\Analyzer\HappinessAnalyzer;
 
 // The Profiler takes a school name and creates a Profile object
 // It grabs all the data required and builds a very nice and pretty object for the front-end.
@@ -90,24 +91,25 @@ class PersonalityFactory {
 		$args['SATWriting'] = intval(($t[6] + $t[7]) / 2);
 
 		//get Facebook ID
-		$fileName = getcwd() . "/data/".$parsedName."/name.json";
-		$doc = fopen($fileName,"r");
-		$t = fread($doc, filesize($fileName));
-		fclose($doc);
-		$t = preg_replace('/[^(\d+|,|\.)]/', '', $t);
-		$t = explode(',', $t);
-		// $args['fbid'] = $t[1];
-
+		$fileName = getcwd() . "/data/" . $parsedName . "/name.json";
+		$namefile = file_get_contents($fileName);
+		$fbfile = json_decode($namefile);
+		$args['fbid'] = $fbfile->fbid;
 
 		$instagram = new Instagram($map->getLongitude(), $map->getLatitude(), $name);
 		$args['instagramUrl'] = $instagram->getUrl();
 
-		$coverPhoto = new FacebookCoverPhotoGrabber("105930651606");
+		$coverPhoto = new FacebookCoverPhotoGrabber($args['fbid']);
 		$coverphotourl = $coverPhoto->run();
 		$args['coverPhoto'] = $coverphotourl;
 
 		$yaks = new YikYakGrabber($map->getLatitude(),$map->getLongitude(),10);
 		$args['yaks'] = $yaks->run();
+		echo $args['yaks'];
+
+		$happiness = new HappinessAnalyzer($args['yaks']);
+		// $args['happiness'] = $happiness->run();
+		
 
 		$personality = new Personality($args);
 		return $personality;
