@@ -81,7 +81,7 @@
 
 			<p>Nevertheless, we are a really queer-friendly school—we&#8217;re all very accepting.</p>
 
-			<p>There are about 1600 students in my grade, so I see the same faces around a lot, but I don&#8217;t know everyone. About half the people I see every day are men, half women.</p>
+			<p>There are about <?php echo intval($personality->getUndergrads() / 4) ?> students in my grade, so I see the same faces around a lot, but I don&#8217;t know everyone. About half the people I see every day are men, half women.</p>
 
 			<p>Most of the people I know are from out of state. About one in ten of my friends is from outside the US, too.</p>
 
@@ -99,7 +99,7 @@
 			<p>Wash U students are <em>really</em> smart.</p>
 			</blockquote>
 
-			<p>I got a <strong><?php echo $personality->getACT(); ?></strong> on my ACT and a <strong><?php echo $personality->getSAT(); ?></strong> my SAT.</p>
+			<p>I got a <strong><?php echo $personality->getACT(); ?></strong> on my ACT and a <strong><?php echo $personality->getSAT()[0] + $personality->getSAT()[1] + $personality->getSAT()[2]; ?></strong> my SAT.</p>
 
 			<p>I don&#8217;t know anyone who graduated in the bottom half of their class, and <strong>most of my friends were in the top 10%</strong>.</p>
 

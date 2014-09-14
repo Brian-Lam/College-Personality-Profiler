@@ -84,10 +84,10 @@ class PersonalityFactory {
 		fclose($doc);
 		$t = preg_replace('/[^(\d+|,|\.)]/', '', $t);
 		$t = explode(',', $t);
-		$args['ACT'] = ($t[0] + $t[1]) / 2;
-		$args['SATReading'] = ($t[2] + $t[3]) / 2;
-		$args['SATMath'] = ($t[4] + $t[5]) / 2;
-		$args['SATWriting'] = ($t[6] + $t[7]) / 2;
+		$args['ACT'] = intval(($t[0] + $t[1]) / 2);
+		$args['SATReading'] = intval(($t[2] + $t[3]) / 2);
+		$args['SATMath'] = intval(($t[4] + $t[5]) / 2);
+		$args['SATWriting'] = intval(($t[6] + $t[7]) / 2);
 
 		//get Facebook ID
 		$fileName = getcwd() . "/data/".$parsedName."/name.json";
