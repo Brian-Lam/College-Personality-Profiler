@@ -1,0 +1,20 @@
+{
+	"ACT": {
+		"firstQ": 26,
+		"secondQ": 30
+	},
+	"SAT": {
+		"reading": {
+			"firstQ": 560,
+			"secondQ": 660
+		},
+		"math": {
+			"firstQ": 580,
+			"secondQ": 670
+		},
+		"writing": {
+			"firstQ": 570,
+			"secondQ": 670
+		}
+	}
+}
