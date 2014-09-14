@@ -28,11 +28,4 @@
 			</datalist>
 		</form>
 	</div>
-
-<?php
-	$command = escapeshellcmd('python src/Profiler/YikYak/example.py');
-	$output = shell_exec($command);
-	echo $output;
-?>
-
 </body>
