@@ -28,7 +28,12 @@
 				<datalist id="schools">
 					<option value="Washington University in St. Louis" />
 					<option value="Harvard University" />
-					<!-- TODO add all universities -->
+					<option value="Emory University"/>
+					<option value="Massachusetts Institute of Technology"/>
+					<option value="Northwestern University"/>
+					<option value="University of Chicago"/>
+					<option value="University of Georgia"/>
+					<option value="University of Washington"/>
 				</datalist>
 			</form>
 		</header>

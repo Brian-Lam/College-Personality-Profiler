@@ -73,7 +73,12 @@
 				<datalist id="schools">
 					<option value="Washington University in St. Louis" />
 					<option value="Harvard University" />
-					<!-- TODO add all universities -->
+					<option value="Emory University"/>
+					<option value="Massachusetts Institute of Technology"/>
+					<option value="Northwestern University"/>
+					<option value="University of Chicago"/>
+					<option value="University of Georgia"/>
+					<option value="University of Washington"/>
 				</datalist>
 			</form>
 
@@ -81,22 +86,26 @@
 		</header>
 
 		<section>
-			<blockquote>
-				<strong>Hi!</strong> I go to <strong>WashU</strong>, but you might know it is as <strong>Washington University in St. Louis</strong>.
+			<blockquote id="introQuote">
+				<p class="triangle-border left"> 
+					<strong>Hi!</strong> I go to <strong>WashU</strong>, but you might know it is as <strong>Washington University in St. Louis</strong>.
+				</p>
 			</blockquote>
-
-			[Map Embed]
-
-			<img width="250" height="250" class="instagrampreview" src="<?php echo $personality->getInstagramUrl(); ?>">
-			<img width="250" height="250" class="instagrampreview" src="<?php echo $personality->getInstagramUrl(); ?>">
-			<img width="250" height="250" class="instagrampreview" src="<?php echo $personality->getInstagramUrl(); ?>">
+			<p class="map">
+				[Map Embed]
+			</p>
+			<p class="picture">
+				<img width="250" height="250" class="instagrampreview" src="<?php echo $personality->getInstagramUrl(); ?>">
+			</p>
 		</section>
 
 		<section>
 			<h2>Location</h2>
 
-			<blockquote>
-				Wear snow boots!
+			<blockquote id="weatherQuote">
+				<p class="triangle-border left"> 
+					Wear snow boots!
+				</p>
 			</blockquote>
 
 			It's in the midwest - in <strong>St. Louis, Missouri</strong>, to be precise - so (of course) the weather is absolutely terrible. 
