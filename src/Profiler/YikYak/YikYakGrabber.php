@@ -14,7 +14,8 @@ class YikYakGrabber {
 	public function run() {
 		$command = escapeshellcmd('python src/Profiler/YikYak/example.py ' . $this->lat . " " . $this->lng . " " . $this->number_yaks);
 		$output = shell_exec($command);
-		echo $output;
+		
+		return $output;
 	}
 }
 ?>

@@ -10,6 +10,7 @@ use Profiler\Instagram\Instagram;
 use Profiler\Facebook\FacebookCoverPhotoGrabber;
 use Profiler\YikYak\YikYakGrabber;
 use Profiler\Analyzer\HappinessAnalyzer;
+use Profiler\Analyzer\CussAnalyzer;
 
 // The Profiler takes a school name and creates a Profile object
 // It grabs all the data required and builds a very nice and pretty object for the front-end.
@@ -125,9 +126,11 @@ class PersonalityFactory {
 		$yaks = new YikYakGrabber($map->getLatitude(),$map->getLongitude(),10);
 		$args['yaks'] = $yaks->run();
 
-		$happiness = new HappinessAnalyzer($args['yaks']);
+		// $happiness = new HappinessAnalyzer($args['yaks']);
 		// $args['happiness'] = $happiness->run();
-		
+
+		// $cuss = new CussAnalyzer($args['yaks']);
+		// $args['cuss'] = $cuss->run();
 
 		$personality = new Personality($args);
 		return $personality;
