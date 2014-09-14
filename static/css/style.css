@@ -109,6 +109,13 @@ form {
   -moz-border-radius:10px;
   border-radius:10px;
 }
+.person-picture{
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  left: -220px;
+  top: -33px;
+}
 
 
 /* Variant : for left/right positioned triangle
@@ -119,7 +126,7 @@ form {
   width: 70%;
   left: 20%;
 }
-       
+
 /* THE TRIANGLE
 ------------------------------------------------------------------------------------------------------------------------------- */
 
