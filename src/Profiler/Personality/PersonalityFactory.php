@@ -23,7 +23,7 @@ class PersonalityFactory {
 		$instagram = new Instagram($map->getLongitude(), $map->getLatitude(), $name);
 		$args['instagramUrl'] = $instagram->getUrl();
 
-		$yaks = new YikYakGrabber("35.943356","-83.938699");
+		$yaks = new YikYakGrabber("35.943356","-83.938699",5);
 		echo $yaks->run();
 
 		$personality = new Personality($args);
