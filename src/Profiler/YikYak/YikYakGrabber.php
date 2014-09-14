@@ -10,7 +10,7 @@ class YikYakGrabber {
 	}
 
 	public function run() {
-		$command = escapeshellcmd('python src/Profiler/YikYak/example.py');
+		$command = escapeshellcmd('python src/Profiler/YikYak/example.py ' . $this->lat . " " . $this->lng);
 		$output = shell_exec($command);
 		echo $output;
 	}
