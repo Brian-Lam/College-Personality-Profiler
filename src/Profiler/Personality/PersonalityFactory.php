@@ -124,7 +124,6 @@ class PersonalityFactory {
 
 		$yaks = new YikYakGrabber($map->getLatitude(),$map->getLongitude(),10);
 		$args['yaks'] = $yaks->run();
-		echo $args['yaks'];
 
 		$happiness = new HappinessAnalyzer($args['yaks']);
 		// $args['happiness'] = $happiness->run();

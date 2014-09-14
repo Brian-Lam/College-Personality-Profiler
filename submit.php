@@ -99,7 +99,7 @@
 
 			<!-- <p>I might have seen {your FB friends who attend this school} around campus.</p> -->
 
-			<p>About 1 in 3 of my friends get scholarship money, which is helpful because it costs about <strong>$40,000 a year</strong> to go here otherwise. Everyone who needed financial aid got it, though.</p>
+			<!-- <p>About 1 in 3 of my friends get scholarship money, which is helpful because it costs about <strong>$40,000 a year</strong> to go here otherwise. Everyone who needed financial aid got it, though.</p> -->
 		</div>
 	</section>
 <!-- 
