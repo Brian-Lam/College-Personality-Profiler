@@ -19,20 +19,20 @@
 	schoolInfo["ethnicities"] = <?php
 		echo "new Array();\n";
 		$ethnicities = $personality->getEthnicities();
-		echo "\tschoolInfo[\"sat\"][\"white\"] = ".$ethnicities[0].";\n";
-		echo "\tschoolInfo[\"sat\"][\"black\"] = ".$ethnicities[1].";\n";
-		echo "\tschoolInfo[\"sat\"][\"hispanic\"] = ".$ethnicities[2].";\n";
-		echo "\tschoolInfo[\"sat\"][\"asian\"] = ".$ethnicities[3].";\n";
-		echo "\tschoolInfo[\"sat\"][\"pacific islander\"] = ".$ethnicities[4].";\n";
-		echo "\tschoolInfo[\"sat\"][\"other\"] = ".$ethnicities[5].";\n";
+		echo "\tschoolInfo[\"ethnicities\"][\"white\"] = ".$ethnicities[0].";\n";
+		echo "\tschoolInfo[\"ethnicities\"][\"black\"] = ".$ethnicities[1].";\n";
+		echo "\tschoolInfo[\"ethnicities\"][\"hispanic\"] = ".$ethnicities[2].";\n";
+		echo "\tschoolInfo[\"ethnicities\"][\"asian\"] = ".$ethnicities[3].";\n";
+		echo "\tschoolInfo[\"ethnicities\"][\"pacific islander\"] = ".$ethnicities[4].";\n";
+		echo "\tschoolInfo[\"ethnicities\"][\"other\"] = ".$ethnicities[5].";\n";
 	?>
 
 	schoolInfo["residency"] = <?php
 		echo "new Array();\n";
 		$res = $personality->getResidency();
-		echo "\tschoolInfo[\"sat\"][\"inState\"] = ".$res[0].";\n";
-		echo "\tschoolInfo[\"sat\"][\"outState\"] = ".$res[1].";\n";
-		echo "\tschoolInfo[\"sat\"][\"foreign\"] = ".$res[2].";\n";
+		echo "\tschoolInfo[\"residency\"][\"inState\"] = ".$res[0].";\n";
+		echo "\tschoolInfo[\"residency\"][\"outState\"] = ".$res[1].";\n";
+		echo "\tschoolInfo[\"residency\"][\"foreign\"] = ".$res[2].";\n";
 	?>
 
 	schoolInfo["diversity"] = <?php echo $personality->getDiversity() ?>;
@@ -49,7 +49,15 @@
 		echo "\tschoolInfo[\"sat\"][\"writing\"] = ".$sat[2].";\n";
 	?>
 
-	
+	window.onload = function() {
+		var intro = document.getElementById("introQuote");
+		var weather = document.getElementById("weatherQuote");
+
+		var greetings = ["Hey!, I go to ", "Hi!  I'm a student at ", "Yo dawg!  I attend "];
+
+		// intro.innerHTML = greetings[Math.floor(Math.random() * greetings.length)];
+		// weather.innerHTML = "c";
+	}
 	
 	</script>
 </head>
