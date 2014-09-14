@@ -51,13 +51,20 @@
 					<strong>Hi!</strong> I go to <strong>WashU</strong>, but you might know it is as <strong>Washington University in St. Louis</strong>.
 				</p>
 			</blockquote>
+
+			<img width="250" height="250" class="instagrampreview" src="<?php echo $personality->getInstagramUrl(); ?>">
 		</div>
 	</section>
 
 	<section>
 		<div class="container">
-			It's in the midwest - in <strong>St. Louis, Missouri</strong>, to be precise - so (of course) the weather is absolutely terrible. 
-			It rains a ton. It snows a ton. And it gets really hot in the summer. <br> <br> <br>
+			<h2>Location</h2>
+
+			<p>
+				It's in the midwest - in <strong>St. Louis, Missouri</strong>, to be precise - so (of course) the weather is absolutely terrible. 
+				It rains a ton. It snows a ton. And it gets really hot in the summer.
+			</p>
+
 			<blockquote>
 				<p  id="weatherQuote" class="triangle-border left"> 
 					<img src="person.png" class="person-picture">
@@ -68,17 +75,73 @@
 		</div>
 	</section>
 
-	<p>The typical student who goes to <?php echo $school ?> will be living near the following coordinates:</p>
-	Latitude: <?php echo $personality->getLatitude(); ?> <br>
-	Longitude <?php echo $personality->getLongitude(); ?> <br>
-	<p>Here's a photo of what's happening around campus: </p>
-	<p class="map">
-			[Map Embed]
-	</p>
-	<p class="picture">
-		<img width="250" height="250" class="instagrampreview" src="<?php echo $personality->getInstagramUrl(); ?>">
-	</p>
+	<section>
+		<div class="container">
+			<h2 id="sizeanddiversity">Size and Diversity</h2>
 
+			<blockquote>
+			<p>We don&#8217;t have a very diverse campus.</p>
+			</blockquote>
+
+			<p>I had a great freshman year, although one or two of my friends left. Speaking of friends, <strong>most of my friends are white</strong>, but I know several Asian people and a couple black people.</p>
+
+			<p>Nevertheless, we are a really queer-friendly school—we&#8217;re all very accepting.</p>
+
+			<p>There are about 1600 students in my grade, so I see the same faces around a lot, but I don&#8217;t know everyone. About half the people I see every day are men, half women.</p>
+
+			<p>Most of the people I know are from out of state. About one in ten of my friends is from outside the US, too.</p>
+
+			<p>I might have seen {your FB friends who attend this school} around campus.</p>
+
+			<p>About a third of my friends get scholarship money, which is helpful because it costs about <strong>$40,000 a year</strong> to go here otherwise. Everyone who needed financial aid got it, though.</p>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<h2 id="academics">Academics</h2>
+
+			<blockquote>
+			<p>Wash U students are <em>really</em> smart.</p>
+			</blockquote>
+
+			<p>I got a <strong>33</strong> on my ACT and a <strong>2215</strong> my SAT.</p>
+
+			<p>I don&#8217;t know anyone who graduated in the bottom half of their class, and <strong>most of my friends were in the top 10%</strong>.</p>
+
+			<p>We have very few &#8220;standard&#8221; classes that everyone takes, but a lot of people are majoring in the social sciences, engineering, and business.</p>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<h2 id="extracurriculars">Extracurriculars</h2>
+
+			<p>Greek life&#8217;s not that big here. About <strong>1 in 4 of my male friends joined fraternities</strong>, and <strong>1 in 4 of my female friends joined sororities</strong>.</p>
+
+			<p>Very few people care about sports, even though our women&#8217;s soccer team, men&#8217;s basketball team, and women&#8217;s basketball team are the best D3 teams in the Midwest.</p>
+
+			<p>In fact, so few people attend our games, we don&#8217;t even have some attendances recorded!</p>
+
+			<blockquote>
+			<p>You might be surprised that we don&#8217;t have a yearbook.</p>
+			</blockquote>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<h2 id="campuslife">Campus Life</h2>
+
+			<blockquote>
+			<p>People here cuss like ducking sailors.</p>
+			</blockquote>
+
+			<p>We&#8217;re generally happy here, and pretty upbeat.</p>
+
+			<p>The student health center here provides free condoms and pregnancy testing, as well as free STI screening.</p>
+		</div>
+	</section>
 
 	<script>
 
