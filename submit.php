@@ -82,7 +82,7 @@
 					<option value="Washington University in St. Louis" />
 					<option value="Harvard University" />
 					<option value="Emory University"/>
-					<option value="Massachusetts Institute of Technology"/>
+					<option value="Massachusettes Institute of Technology"/>
 					<option value="Northwestern University"/>
 					<option value="University of Chicago"/>
 					<option value="University of Georgia"/>
@@ -91,40 +91,38 @@
 			</form>
 
 			<h1 class="college"><?php echo $_GET["school"]; ?></h1>
+			<hr>
+			<br>
 		</header>
 
 		<section>
-			<blockquote id="introQuote">
-				<p class="triangle-border left"> 
+			<blockquote>
+				<p id="introQuote" class="triangle-border left"> 
 					<strong>Hi!</strong> I go to <strong>WashU</strong>, but you might know it is as <strong>Washington University in St. Louis</strong>.
 				</p>
 			</blockquote>
-			<p class="map">
-				[Map Embed]
-			</p>
-			<p class="picture">
-				<img width="250" height="250" class="instagrampreview" src="<?php echo $personality->getInstagramUrl(); ?>">
-			</p>
 		</section>
 
 		<section>
-			<h2 class="location">Location</h2>
-
-			<blockquote id="weatherQuote">
-				<p class="triangle-border left"> 
+			It's in the midwest - in <strong>St. Louis, Missouri</strong>, to be precise - so (of course) the weather is absolutely terrible. 
+			It rains a ton. It snows a ton. And it gets really hot in the summer. <br> <br> <br>
+			<blockquote>
+				<p  id="weatherQuote" class="triangle-border left"> 
 					Wear snow boots!
 				</p>
 			</blockquote>
-
-			It's in the midwest - in <strong>St. Louis, Missouri</strong>, to be precise - so (of course) the weather is absolutely terrible. 
-			It rains a ton. It snows a ton. And it gets really hot in the summer.
 		</section>
 
 		<p>The typical student who goes to <?php echo $schoolname ?> will be living near the following coordinates:</p>
 		Latitude: <?php echo $personality->getLatitude(); ?> <br>
 		Longitude <?php echo $personality->getLongitude(); ?> <br>
 		<p>Here's a photo of what's happening around campus: </p>
-		<p></p>
+		<p class="map">
+				[Map Embed]
+		</p>
+		<p class="picture">
+			<img width="250" height="250" class="instagrampreview" src="<?php echo $personality->getInstagramUrl(); ?>">
+		</p>
 	</div>	
 </body>
 </html>

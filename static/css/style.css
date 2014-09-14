@@ -13,6 +13,7 @@ body {
 
 /* Header */
 header {
+  margin: 1em auto;
   font-size: 20px;
   text-align: center;
   text-shadow: 2px 2px 4px #000000;
@@ -62,11 +63,6 @@ form {
   width: 20%;
   border: 0;
   display: inline-block;
-}
-
-.location {
-  font-size: 20px;
-  text-shadow: 2px 2px 4px #000000;
 }
 
 /*.upperEmptyPictureBlock {
