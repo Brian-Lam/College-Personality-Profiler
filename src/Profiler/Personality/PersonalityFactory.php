@@ -24,6 +24,8 @@ class PersonalityFactory {
 		$map = new Map($name);
 		$args['longitude'] = $map->getLongitude();
 		$args['latitude'] = $map->getLatitude();
+		$args['city'] = $map->getCity();
+		$args['state'] = $map->getState();
 
 		$parsedName = preg_replace("/ /", "", $name);
 		$parsedName = preg_replace("/\./", "", $parsedName);

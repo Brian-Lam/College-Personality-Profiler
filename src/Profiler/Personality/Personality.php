@@ -129,4 +129,74 @@ class Personality{
 			return "almost never";
 		}
 	}
+
+	public function diversityPhrase(){
+		$diversity = $this->getDiversity();
+		if($diversity>0.9){
+			return "We have an extremely diverse campus.";
+		}
+		elseif($diversity>0.8){
+			return "We have a pretty diverse campus.";
+		}
+		elseif($diversity>0.7){
+			return "Campus is fairly diverse.";
+		}
+		elseif($diversity>0.6){
+			return "We don't have a very diverse campus.";
+		}
+		else{
+			return "Our campus is not at all diverse.";
+		}
+	}
+
+	public function getAddress(){
+		return $this->args['city'] . ", " . $this->args['state'];
+	}
+
+	public function snowPhrase(){
+		$snow = array_sum($this->args['snowfall']);
+		if($snow>48){
+			return "We get completely blanketed with snow.";
+		}
+		elseif($snow>30){
+			return "Wear snow boots!";
+		}
+		elseif($snow>12){
+			return "Get ready to build snowmen!";
+		}
+		elseif($snow>6){
+			return "Every once in a while we have a snow day.";
+		}
+		else{
+			return "Prepare for a sunny winter!";
+		}
+	}
+
+	public function mostFriends(){
+		$c = $this->args['Caucasian'];
+		$aa = $this->args['African American'];
+		$h = $this->args['Hispanic'];
+		$a = $this->args["Asian"];
+		$n = $this->args["Native Hawaiin/Pacific Islander"];
+		$most = max([$c,$aa,$h,$a,$n]);
+		if($most==$c){
+			return "Caucasian";
+		}
+		elseif($most==$aa){
+			return "African American";
+		}
+		elseif($most==$h){
+			return "Hispanic";
+		}
+		elseif($most==$a){
+			return "Asian";
+		}
+		else{
+			return "Native Hawaiin/Pacific Islander";
+		}
+	}
+
+	public function getForeign(){
+		return $this->args['Foreign'];
+	}
 }

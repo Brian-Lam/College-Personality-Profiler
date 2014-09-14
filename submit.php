@@ -59,12 +59,12 @@
 			<h2>Location</h2>
 
 			<p><!-- TODO autoget location --><!-- TODO generate weather copy -->
-				It's in the midwest - in <strong>St. Louis, Missouri</strong>, to be precise - so (of course) the weather is absolutely terrible. 
+				It's in <strong><?php echo $personality->getAddress(); ?></strong>. 
 				It rains <?php echo $personality->rainQuantifier(); ?>. It snows <?php echo $personality->rainQuantifier(); ?>. And it gets really hot in the summer. We have a <?php echo $personality->getTempFluctuation(); ?> degree fluctuation in the average temperature between summer and winter!
 			</p>
 
 			<blockquote>
-				Wear snow boots!
+				<?php echo $personality->snowPhrase(); ?>
 			</blockquote>
 		</div>
 	</section>
@@ -74,18 +74,27 @@
 			<h2 id="sizeanddiversity">Size and Diversity</h2>
 
 			<blockquote>
-			<p>We don&#8217;t have a very diverse campus.</p>
+			<p><?php echo $personality->diversityPhrase(); ?></p>
 			</blockquote>
 
-			<p>I had a great freshman year, although one or two of my friends left. Speaking of friends, <strong>most of my friends are white</strong>, but I know several Asian people and a couple black people.</p>
+			<p>I had a great freshman year, although one or two of my friends left. Speaking of friends, <strong>most of my friends are <?php echo $personality->mostFriends(); ?></strong>, but I know several Asian people and a couple black people.</p>
 
 			<p>Nevertheless, we are a really queer-friendly school—we&#8217;re all very accepting.</p>
 
 			<p>There are about <?php echo intval($personality->getUndergrads() / 4) ?> students in my grade, so I see the same faces around a lot, but I don&#8217;t know everyone. About half the people I see every day are men, half women.</p>
 
-			<p>Most of the people I know are from out of state. About one in ten of my friends is from outside the US, too.</p>
+			<p>Most of the people I know are from out of state.<?php
+				$r = $personality->getForeign();
+				// echo $personality->getForeign();
+				// echo "\n";
+				// echo $personality->getUndergrads();
+				if($r > 5) {
+					$r = round(100 / $r);
+					echo " About 1 in " . $r . "of my friends is from outside the US, too.";
+				}
+			?></p>
 
-			<p>I might have seen {your FB friends who attend this school} around campus.</p>
+			<!-- <p>I might have seen {your FB friends who attend this school} around campus.</p> -->
 
 			<p>About a third of my friends get scholarship money, which is helpful because it costs about <strong>$40,000 a year</strong> to go here otherwise. Everyone who needed financial aid got it, though.</p>
 		</div>
