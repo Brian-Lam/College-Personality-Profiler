@@ -126,7 +126,7 @@
 		var intro = document.getElementById("introQuote");
 		var weather = document.getElementById("weatherQuote");
 
-		var greetings = ["Hey!  I go to ", "Hi!  I'm a student at ", "Hello!  I attend ", "What's up? I go to"];
+		var greetings = ["Hey!  I go to ", "Hi!  I'm a student at ", "Hello!  I attend ", "What's up? I go to "];
 		intro.innerHTML = greetings[Math.floor(Math.random() * greetings.length)] + schoolInfo["name"];
 	}
 	
