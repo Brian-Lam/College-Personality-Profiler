@@ -95,6 +95,7 @@ class PersonalityFactory {
 		$namefile = file_get_contents($fileName);
 		$fbfile = json_decode($namefile);
 		$args['fbid'] = $fbfile->fbid;
+		$args['nickname'] = $fbfile->name;
 
 		$instagram = new Instagram($map->getLongitude(), $map->getLatitude(), $name);
 		$args['instagramUrl'] = $instagram->getUrl();

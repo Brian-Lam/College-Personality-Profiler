@@ -13,7 +13,7 @@ class Map{
 		$args["address"] = $placename;
 		$fetcher = new JSONFetcher($base, $args);
 		$result = $fetcher->run();
-
+		
 		$this->lat = $result->results[0]->geometry->bounds->northeast->lat;
 		$this->lng = $result->results[0]->geometry->bounds->northeast->lng;
 	}

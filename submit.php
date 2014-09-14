@@ -47,7 +47,7 @@
 		<div class="container">
 			<blockquote>
 			<!-- TODO autoget school nickname -->
-				<strong>Hi!</strong> I go to <strong><?php echo $school ?></strong>, but you might know it is as <strong>Washington University in St. Louis</strong>.
+				<strong>Hi!</strong> I go to <strong><?php echo $school ?></strong>, but you might know it is as <strong><?php echo $personality->getNickname(); ?></strong>.
 			</blockquote>
 
 			<img width="250" height="250" class="instagrampreview" src="<?php echo $personality->getInstagramUrl(); ?>">

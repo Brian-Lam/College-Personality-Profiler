@@ -74,4 +74,8 @@ class Personality{
 		return $this->args['yaks'];
 	}
 
+	public function getNickname(){
+		return $this->args['nickname'][1];
+	}
+
 }
