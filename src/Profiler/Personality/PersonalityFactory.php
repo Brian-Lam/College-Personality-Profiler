@@ -25,7 +25,7 @@ class PersonalityFactory {
 
 		$coverPhoto = new FacebookCoverPhotoGrabber("93768131177");
 		$coverphotourl = $coverPhoto->run();
-		$args['coverPhoto'] = '<img src="' . $coverphotourl . '" />';
+		$args['coverPhoto'] = $coverphotourl;
 
 		$personality = new Personality($args);
 		return $personality;
