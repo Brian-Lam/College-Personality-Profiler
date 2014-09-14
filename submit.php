@@ -61,6 +61,7 @@
 	</script>
 </head>
 <body class="submit">
+	<div class="banner">
 	<div class="container">
 		<header>
 			<h1>College Personality Profiler</h1>
@@ -90,7 +91,6 @@
 			</form>
 
 			<h1 class="college"><?php echo $_GET["school"]; ?></h1>
-			<hr>
 			<br>
 		</header>
 
@@ -126,5 +126,6 @@
 			<img width="250" height="250" class="instagrampreview" src="<?php echo $personality->getInstagramUrl(); ?>">
 		</p>
 	</div>	
+</div>
 </body>
 </html>

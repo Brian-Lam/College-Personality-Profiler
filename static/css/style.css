@@ -4,7 +4,12 @@ body {
   font: 20px Verdana;
   color: #fff;
 }
-
+.banner {
+  height:28%;
+  background-image: url("http://law.wustl.edu/organizations/iplaw/images/washu1.jpg");
+  background-size: 100%;
+  margin: 0 auto;
+}
 .container {
   width: 70%;
   display: block;
@@ -13,7 +18,7 @@ body {
 
 /* Header */
 header {
-  margin: 1em auto;
+  margin: 0 auto;
   font-size: 20px;
   text-align: center;
   text-shadow: 2px 2px 4px #000000;
