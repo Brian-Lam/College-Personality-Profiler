@@ -11,7 +11,7 @@
 </head>
 <body class="submit">
 	<!-- TODO autoget FB cover -->
-	<header style="background-image: url(https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpa1/t31.0-8/10506673_10152638203716178_8711067838228894072_o.jpg);">
+	<header style="background-image: url(<?php echo $personality->getCoverPhotoUrl(); ?>);">
 		<div class="container">
 			<h1>College Personality Profiler</h1>
 			<h2>Because you don't go to college. Yet.</h2>
@@ -46,7 +46,8 @@
 	<section>
 		<div class="container">
 			<blockquote>
-				<strong>Hi!</strong> I go to <strong>WashU</strong>, but you might know it is as <strong>Washington University in St. Louis</strong>.
+			<!-- TODO autoget school nickname -->
+				<strong>Hi!</strong> I go to <strong><?php echo $school ?></strong>, but you might know it is as <strong>Washington University in St. Louis</strong>.
 			</blockquote>
 
 			<img width="250" height="250" class="instagrampreview" src="<?php echo $personality->getInstagramUrl(); ?>">
@@ -57,7 +58,7 @@
 		<div class="container">
 			<h2>Location</h2>
 
-			<p>
+			<p><!-- TODO autoget location --><!-- TODO generate weather copy -->
 				It's in the midwest - in <strong>St. Louis, Missouri</strong>, to be precise - so (of course) the weather is absolutely terrible. 
 				It rains a ton. It snows a ton. And it gets really hot in the summer. We have a 51 degree fluctuation in the average temperature between summer and winter!
 			</p>
@@ -98,7 +99,7 @@
 			<p>Wash U students are <em>really</em> smart.</p>
 			</blockquote>
 
-			<p>I got a <strong>33</strong> on my ACT and a <strong>2215</strong> my SAT.</p>
+			<p>I got a <strong><?php echo $personality->getACT(); ?></strong> on my ACT and a <strong><?php echo $personality->getSAT(); ?></strong> my SAT.</p>
 
 			<p>I don&#8217;t know anyone who graduated in the bottom half of their class, and <strong>most of my friends were in the top 10%</strong>.</p>
 

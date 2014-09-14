@@ -66,4 +66,8 @@ class Personality{
 		return [$this->args["SATReading"], $this->args["SATMath"], $this->args["SATWriting"]];
 	}
 
+	public function getCoverPhotoUrl(){
+		return $this->args['coverPhoto'];
+	}
+
 }

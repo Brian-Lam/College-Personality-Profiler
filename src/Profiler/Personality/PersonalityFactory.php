@@ -89,11 +89,20 @@ class PersonalityFactory {
 		$args['SATMath'] = ($t[4] + $t[5]) / 2;
 		$args['SATWriting'] = ($t[6] + $t[7]) / 2;
 
+		//get Facebook ID
+		$fileName = getcwd() . "/data/".$parsedName."/name.json";
+		$doc = fopen($fileName,"r");
+		$t = fread($doc, filesize($fileName));
+		fclose($doc);
+		$t = preg_replace('/[^(\d+|,|\.)]/', '', $t);
+		$t = explode(',', $t);
+		// $args['fbid'] = $t[1];
+
 
 		$instagram = new Instagram($map->getLongitude(), $map->getLatitude(), $name);
 		$args['instagramUrl'] = $instagram->getUrl();
 
-		$coverPhoto = new FacebookCoverPhotoGrabber("93768131177");
+		$coverPhoto = new FacebookCoverPhotoGrabber("105930651606");
 		$coverphotourl = $coverPhoto->run();
 		$args['coverPhoto'] = $coverphotourl;
 
