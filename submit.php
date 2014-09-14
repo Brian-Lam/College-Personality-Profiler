@@ -80,9 +80,10 @@
 			<p><?php echo $personality->diversityPhrase(); ?></p>
 			</blockquote>
 
-			<p>I had a great freshman year, although one or two of my friends left. Speaking of friends, <strong>most of my friends are <?php echo $personality->mostFriends(); ?></strong>, but I know several Asian people and a couple black people.</p>
+			<!-- I had a great freshman year, although one or two of my friends left. -->
+			<p> Speaking of friends, <strong>most of my friends are <?php echo $personality->mostFriends(); ?></strong>, but I know several Asian people and a couple black people.</p>
 
-			<p>Nevertheless, we are a really queer-friendly school—we&#8217;re all very accepting.</p>
+			<!-- <p>Nevertheless, we are a really queer-friendly school—we&#8217;re all very accepting.</p> -->
 
 			<p>There are about <?php echo intval($personality->getUndergrads() / 4) ?> students in my grade, so I see the same faces around a lot, but I don&#8217;t know everyone. About half the people I see every day are men, half women.</p>
 
