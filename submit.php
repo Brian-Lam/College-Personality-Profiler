@@ -11,6 +11,7 @@
 	<script>
 
 	var schoolInfo = new Array();
+	schoolInfo["name"] = <?php echo "\"".$_GET["school"]."\""; ?>;
 	schoolInfo["longitude"] = <?php echo $personality->getLongitude() ?>;
 	schoolInfo["latitude"] = <?php echo $personality->getLatitude() ?>;
 
@@ -53,10 +54,8 @@
 		var intro = document.getElementById("introQuote");
 		var weather = document.getElementById("weatherQuote");
 
-		var greetings = ["Hey!, I go to ", "Hi!  I'm a student at ", "Yo dawg!  I attend "];
-
-		// intro.innerHTML = greetings[Math.floor(Math.random() * greetings.length)];
-		// weather.innerHTML = "c";
+		var greetings = ["Hey!  I go to ", "Hi!  I'm a student at ", "Yo dawg!  I attend "];
+		intro.innerHTML = greetings[Math.floor(Math.random() * greetings.length)] + schoolInfo["name"];
 	}
 	
 	</script>
