@@ -34,7 +34,7 @@ I don't know anyone who graduated in the bottom half of their class, and **most 
 
 > something quip about classes
 
-We have very few "standard" classes that everyone takes,  but a lot of people are majoring in biology, chemistry, and engineering.
+We have very few "standard" classes that everyone takes,  but a lot of people are majoring in the social sciences and engineering.
 
 ## Extracurriculars ##
 
