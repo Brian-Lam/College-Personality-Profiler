@@ -1,0 +1,61 @@
+<html>
+<head>
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>Washington University in St. Louis | What&#700;s it like?</title>
+</head>
+<body class="result">
+	<header>
+		<div class="container">
+			<h1 id="title">What&#700;s it like?</h1>
+			<h2>college personality profiler</h2>
+			<h2>Because you don't go to college. Yet.</h2>
+		</div>
+
+		<nav>
+			<div class="container">
+				<form class="search" action="submit.htm">
+					<input class="field collegename" 
+						type="text" 
+						placeholder="What college should I generate a personality for?"
+						name="school"
+						list="schools"
+						value="Washington University in St. Louis"
+						required />
+					<input class="button collegename-submit" type="submit" value="Search">
+				
+					<datalist id="schools">
+						<option value="Washington University in St. Louis" />
+						<option value="Harvard University" />
+						<option value="Emory University"/>
+						<option value="Massachusetts Institute of Technology"/>
+						<option value="Northwestern University"/>
+						<option value="University of Chicago"/>
+						<option value="University of Georgia"/>
+						<option value="University of Washington"/>
+					</datalist>
+				</form>
+			</div>
+		</nav>
+
+		<h1 class="college">Washington University in St. Louis</h1>
+	</header>
+
+	<section>
+		<div class="container">
+			<blockquote>
+				<strong>Hi!</strong> I go to <strong>WashU</strong>, but you might know it is as <strong>Washington University in St. Louis</strong>.
+			</blockquote>
+
+			<img width="250" height="250" class="instagrampreview" src="<?php echo $personality->getInstagramUrl(); ?>">
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="container">
+			Thanks to Foursquare etc etc
+		</div>
+	</footer>
+</body>
+</html>

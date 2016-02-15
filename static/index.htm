@@ -1,0 +1,56 @@
+<html>
+<head>
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>What&#700;s it like?</title>
+</head>
+<body class="index">
+	<header>
+		<div class="container">
+			<h1 class="title" id="title">What&#700;s it like?</h1>
+			<h2 class="subtitle traditional" id="subtitle">college personality profiler</h2>
+			<h2 class="subtitle brash" id="brash">Because you don't go to college. Yet.</h2>
+		</div>
+
+		<nav>
+			<div class="container">
+				<form class="search" action="submit.htm">
+					<input class="field collegename" 
+						type="text" 
+						placeholder="What college should I generate a personality for?"
+						name="school"
+						list="schools"
+						value=""
+						required />
+					<input class="button collegename-submit" type="submit" value="Search">
+				
+					<datalist id="schools">
+						<option value="Washington University in St. Louis" />
+						<option value="Harvard University" />
+						<option value="Emory University"/>
+						<option value="Massachusetts Institute of Technology"/>
+						<option value="Northwestern University"/>
+						<option value="University of Chicago"/>
+						<option value="University of Georgia"/>
+						<option value="University of Washington"/>
+					</datalist>
+				</form>
+			</div>
+		</nav>
+	</header>
+
+	<footer>
+		<div class="container">
+			Thanks to Foursquare etc etc
+		</div>
+	</footer>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="js/jquery.fittext.js"></script>
+	<script>
+	  $("#title").fitText(0.8);
+	  $("#subtitle").fitText(2.5);
+	  $("#brash").fitText(1.6);
+	</script>
+</body>
+</html>
